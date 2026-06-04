@@ -1,5 +1,6 @@
 #pragma once
 
+
 template <typename E>
 class BSTNode {
 public:
@@ -12,14 +13,7 @@ public:
         this->left = left;
         this->right = right;
     }
-
-    BSTNode(E element) {
-        this->element = element;
-        left = right = nullptr;
-    }
-
     ~BSTNode() {}
-
     int childrenCount() {
         return (left == nullptr ? 0 : 1) + (right == nullptr ? 0 : 1);
     }
