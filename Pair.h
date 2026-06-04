@@ -4,10 +4,11 @@
 using std::ostream;
 
 template<typename K, typename V>
-class Pair{
+class Pair {
 public:
 	K key;
 	V value;
+	Pair() {}
 	Pair(K key, V value) {
 		this->key = key;
 		this->value = value;
@@ -35,4 +36,3 @@ public:
 		return os;
 	}
 };
-
